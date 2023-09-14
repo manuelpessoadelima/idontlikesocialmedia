@@ -1,0 +1,33 @@
+body {
+    background-color: lightblue;
+  }
+
+
+html * {
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+h1 {
+    font-size: 180px;
+    margin: 1 
+  }
+
+h2 {
+    margin:100px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(230, 173, 202);
+    }
+    h1 {
+        font-size: 50px;
+        margin: 100px 
+      }
+    h2 {
+        text-align: right;
+        font-size:10px;
+    }
+  }
