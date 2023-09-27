@@ -18,16 +18,76 @@ h2 {
     text-align: right;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: rgb(230, 173, 202);
-    }
-    h1 {
-        font-size: 50px;
-        margin: 100px 
-      }
-    h2 {
-        text-align: right;
-        font-size:10px;
-    }
+h3 {
+    font-style:italic;
+}
+
+a {
+    display: inline;
+    margin: 350px;
+    font-size:50px;
   }
+
+p {
+    display: inline-block;
+    margin:50px 200px;
+    line-height:1.5;
+}
+
+/* First configuration for screen widths up to 600px */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(230, 173, 202);
+  }
+  h1 {
+    font-size: 30px; /* Adjust font size accordingly */
+    margin: 50px; /* Adjust margin accordingly */
+  }
+  h2 {
+    text-align: center; /* Adjust alignment accordingly */
+    font-size: 10px; /* Adjust font size accordingly */
+  }
+
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  
+}
+
+/* Second configuration for screen widths between 601px and 1000px */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  body {
+    background-color: rgb(202, 230, 173);
+  }
+  h1 {
+    font-size: 40px; /* Adjust font size accordingly */
+    margin: 75px; /* Adjust margin accordingly */
+  }
+  h2 {
+    text-align: left; /* Adjust alignment accordingly */
+    font-size: 15px; /* Adjust font size accordingly */
+  }
+
+  img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+}
+
+/* Third configuration for screen widths between 1001px and 1500px */
+@media only screen and (min-width: 1001px) and (max-width: 1500px) {
+  body {
+    background-color: rgb(173, 202, 230);
+  }
+  h1 {
+    font-size: 130px; /* Adjust font size accordingly */
+    margin: 100px; /* Adjust margin accordingly */
+  }
+  h2 {
+    text-align: right; /* Adjust alignment accordingly */
+    font-size: 20px; /* Adjust font size accordingly */
+  }
+}
+
+
