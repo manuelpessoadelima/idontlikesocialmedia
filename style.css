@@ -53,6 +53,10 @@ p {
     max-height: 50%;
   }
   
+  a {
+    margin: 150px;
+    font-size:20px;
+  }
 }
 
 /* Second configuration for screen widths between 601px and 1000px */
@@ -72,6 +76,11 @@ p {
   img {
     max-width: 70%;
     max-height: 70%;
+  }
+
+   a {
+    margin: 150px;
+    font-size:40px;
   }
 }
 
