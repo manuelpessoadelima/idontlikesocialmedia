@@ -102,6 +102,7 @@ display:block
 @media only screen and (max-width: 600px) and (orientation: landscape) {
   .main{
     width:100%; 
+   
   }
 
  
@@ -124,6 +125,7 @@ display:block
 @media only screen and (min-width: 601px) and (max-width: 768px){
   .main{
     width:100%; 
+
   }
 
   
@@ -173,7 +175,11 @@ display:block
 @media only screen and (min-width: 769px) and (max-width: 992px){
   .main{
     width:100%; 
-    /*background-color: yellow;*/
+  
+  }
+
+  body{
+    background-color: lightyellow;
   }
 
  
@@ -193,12 +199,12 @@ display:block
     a {
       display: inline-block;
       margin: 20px;
-      font-size:20px;
+      font-size:30px;
     }
 
     @media only screen and (min-width: 1200px) {
       .main{
-        /*background-color:lightcoral; */
+     
       }
     
       .explanation{
