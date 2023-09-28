@@ -1,5 +1,7 @@
 body {
     background-color: lightblue;
+    margin:0;
+    padding:0;
   }
 
 
@@ -10,7 +12,8 @@ html * {
 
 h1 {
     font-size: 180px;
-    margin: 1 
+    margin-top: 0px;
+    margin: 0 
   }
 
 h2 {
@@ -34,69 +37,150 @@ p {
     line-height:1.5;
 }
 
-/* First configuration for screen widths up to 600px */
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: rgb(230, 173, 202);
-  }
-  h1 {
-    font-size: 30px; /* Adjust font size accordingly */
-    margin: 50px; /* Adjust margin accordingly */
-  }
-  h2 {
-    text-align: center; /* Adjust alignment accordingly */
-    font-size: 10px; /* Adjust font size accordingly */
+.main{
+  width:1200px;
+  padding: 0px; 
+  margin: 0px;
+}
+
+img {
+max-width:100%;
+height:auto;
+margin:0;
+padding:0;
+border:0;
+display:block
+
+}
+
+/*mobile version*/
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .main{
+    width:80%; 
   }
 
-  img {
-    max-width: 50%;
-    max-height: 50%;
+  body {
+    background-color: lightyellow;
   }
-  
+
+  h1 {
+    font-size: 90px;
+    margin-top: 0px; 
+  }
+
+  h2 {
+    margin:10px;
+    text-align: left;
+    font-size:80%;
+}
+  img {
+    margin-left:0px;
+    max-width: 130%;
+    height:auto;
+    }
+
+
   a {
-    margin: 150px;
+    display: inline-block;
+    margin: 20px;
     font-size:20px;
   }
-}
 
-/* Second configuration for screen widths between 601px and 1000px */
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
-  body {
-    background-color: rgb(202, 230, 173);
-  }
-  h1 {
-    font-size: 40px; /* Adjust font size accordingly */
-    margin: 75px; /* Adjust margin accordingly */
-  }
-  h2 {
-    text-align: left; /* Adjust alignment accordingly */
-    font-size: 15px; /* Adjust font size accordingly */
+
+} 
+
+/*other sizes*/
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .main{
+    width:100%; 
+  
   }
 
   img {
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 100%;
+    height:auto;
+    }
+} 
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+  .main{
+    width:100%; 
   }
 
-   a {
-    margin: 150px;
-    font-size:40px;
-  }
-}
-
-/* Third configuration for screen widths between 1001px and 1500px */
-@media only screen and (min-width: 1001px) and (max-width: 1500px) {
   body {
-    background-color: rgb(173, 202, 230);
+   
   }
+
+  img {
+    padding:0;
+    max-width: 100%;
+    height:auto;
+    }
+
   h1 {
-    font-size: 130px; /* Adjust font size accordingly */
-    margin: 100px; /* Adjust margin accordingly */
+    font-size: 90px;
+    margin: 0; 
   }
+
   h2 {
-    text-align: right; /* Adjust alignment accordingly */
-    font-size: 20px; /* Adjust font size accordingly */
+    margin-top:10px;
+    margin-left:0px;
+    margin-bottom:20px;r
+    text-align: left;
+    font-size:150%;
+    padding:0
+  }
+
+  h3 {
+    margin-top:5px;
+    margin-left:10px;
+    font-style:italic;
+    padding:0;
+  }
+
+  a {
+    display: inline;
+    margin-top:0px;
+    margin-left: 0px;
+    font-size:30px;
+    padding:0;
   }
 }
 
+@media only screen and (min-width: 769px) and (max-width: 992px){
+  .main{
+    width:100%; 
+    /*background-color: yellow;*/
+  }
+
+  h1{
+    font-size:80px;
+  }
+
+  img {
+    max-width: 100%;
+    height:auto;
+    
+    }
+
+
+    @media only screen and (max-width: 1200px) {
+      .main{
+        /*background-color:lightcoral; */
+      }
+
+      h1{
+        font-size:150px;
+      }
+
+      a {
+        display: inline;
+        margin-top:0px;
+        margin-left: 0px;
+        font-size:30px;
+        padding:0;
+      }
+
+}
 
