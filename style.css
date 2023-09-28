@@ -102,8 +102,9 @@ display:block
 @media only screen and (max-width: 600px) and (orientation: landscape) {
   .main{
     width:100%; 
-  
   }
+
+ 
   .explanation{
     font-size:200%;
   }
@@ -124,8 +125,12 @@ display:block
   .main{
     width:100%; 
   }
+
+  
+
   .explanation{
     font-size:200%;
+    margin:10px;
   }
  
 
@@ -170,8 +175,11 @@ display:block
     width:100%; 
     /*background-color: yellow;*/
   }
+
+ 
   .explanation{
     font-size:200%;
+    margin:20px;
   }
   h1{
     font-size:80px;
@@ -188,13 +196,15 @@ display:block
       font-size:20px;
     }
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (min-width: 1200px) {
       .main{
         /*background-color:lightcoral; */
       }
-
+    
       .explanation{
         font-size:200%;
+        margin:10px;
+        padding:15px;
       }
 
       h1{
@@ -202,10 +212,11 @@ display:block
       }
 
       a {
+        text-justify: auto|inter-word|inter-character|none:initial|inherit;
         display: inline;
         margin-top:0px;
         margin-left: 0px;
-        font-size:30px;
+        font-size:40px;
         padding:0;
       }
 
